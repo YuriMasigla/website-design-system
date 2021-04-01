@@ -3,39 +3,44 @@
 }
 
 body {
+    background-color: #C3E0E5;
     font-family: "Ubuntu", sans-serif;
 }
 
 header {
-    background-color: #274472;
+    background-color: #274472f8;
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 70px;
     left: 0;
     top: 0;
+    z-index: 1;
 }
 
 header h1 {
     color: white;
     padding-left: 15px;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 section {
+    background-color: white;;
     border: 2px solid black;
-
+    position: relative;
+    top: 90px;
+    width: 100%;
+    margin: 20px 10px;
 }
 
 section h2 {
     position: relative;
     left: 15px;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 section.palette {
-    position: relative;
     top: 70px;
     width: 100%;
 }
@@ -43,28 +48,95 @@ section.palette {
 section.palette div {
     display: inline-block;
     text-align: center;
-    width: 300px
+    width: 300px;
+    margin: 20px 30px;
 }
 
 section.palette div.color1 {
     background-color: #C3E0E5;
-    margin: 20px 30px;
 }
 
 section.palette div.color2 {
     color: white;
     background-color: #274472;
-    margin: 20px 30px;
 }
 
 section.palette div.color3 {
     color: white;
     background-color: #5885AF;
-    margin: 20px 30px;
 }
 
 section.palette div.color4 {
     color: white;
     background-color: #41729F;
-    margin: 20px 30px;
+}
+
+section.fonts div {
+    display: inline-block;
+    width: 500px;
+    margin: 10px 30px;
+}
+
+section.fonts div.font1 {
+    font-family: "Ubuntu";
+}
+
+section.fonts div.font2 {
+    font-family: "Montserrat";
+}
+
+section.fonts div.font3 {
+    font-family: "Open Sans";
+}
+
+section.fonts div h3 {
+    background-color: #5885AF;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    padding: 0.25em 0.5em;
+    font-size: 26px;
+}
+
+section.fonts div p {
+    font-size: 20px
+}
+
+section.fonts p.boldface {
+    font-weight: bold;
+}
+
+section.fonts p.italicized {
+    font-style: italic;
+}
+
+section.textstyles {
+    top: 100px;
+}
+
+section.textstyles div {
+    display: inline-block;
+    width: 500px;
+    margin: 10px 30px;
+}
+
+section.textstyles div.heading1 h1 {
+    padding-left: 15px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+section.textstyles div.heading2 h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+section.textstyles div.paragraph p {
+    font-size: 20px;
+    padding-left: 17px;
+}
+
+section.textstyles div li {
+    margin: 10px;
+    list-style: square;
 }
